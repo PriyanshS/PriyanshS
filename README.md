@@ -1,111 +1,97 @@
-<!-- ╔══════════════════════════════════════════════════╗ -->
-<!-- ║  Priyansh Saxena — GitHub Profile README        ║ -->
-<!-- ║  Place this file at: PriyanshS/PriyanshS/README.md ║ -->
-<!-- ╚══════════════════════════════════════════════════╝ -->
-
 <div align="center">
 
-<br>
+# hey, i'm Priyansh
 
-```
-┌─────────────────────────────────────────────────────┐
-│                                                     │
-│   Priyansh Saxena                                   │
-│   Backend Engineer · NMIMS STME · Indore, IN        │
-│                                                     │
-└─────────────────────────────────────────────────────┘
-```
+### curious computer engineer building systems across code, data, AI, hardware, and interfaces
+
+I like taking messy ideas and turning them into working things: dashboards, digital twins, local AI tools, sensor systems, optimization engines, and full-stack prototypes that actually run.
+
+[GitHub](https://github.com/PriyanshS) | [LinkedIn](https://linkedin.com/in/priyanshsaxena) | [Email](mailto:priyansh@mail.com)
 
 </div>
 
 ---
 
-<img align="right" width="38%" src="https://github-readme-stats.vercel.app/api?username=PriyanshS&show_icons=true&hide_border=true&title_color=444441&icon_color=888780&text_color=5F5E5A&bg_color=00000000&hide=stars&count_private=true" />
+## builder.log
 
-### `whoami`
+```txt
+name        Priyansh Saxena
+base        Indore, India
+school      B.Tech Computer Engineering @ NMIMS STME
+mode        curious generalist, systems builder, constant learner
+pattern     idea -> architecture -> prototype -> polish -> document
+```
 
-Backend engineer who builds systems that are  
-**precise by design** — not just functional.
+I am drawn to systems: how data moves, how interfaces explain complexity, how hardware talks to software, how AI can stay local and useful, and how a project becomes more than a demo.
 
-Work spans financial intelligence pipelines,  
-quantum-classical compute, IoT ingestion layers,  
-and local-first AI architectures.
-
-Currently in **Sem IV** @ NMIMS STME, shipping  
-real systems between lectures.
-
-<br clear="right"/>
+My GitHub is where I try things in public. Some projects are polished, some are experiments, but most of them come from the same instinct: build the thing, understand the tradeoffs, and keep making it more real.
 
 ---
 
-### `currently_exploring[]`
+## currently curious about
 
-```python
-exploring = [
-    "Raft / Paxos distributed consensus",
-    "Kafka event streaming internals",
-    "gRPC service meshes",
-    "QAOA vs quantum annealing tradeoffs",
-    "MQTT broker architecture",
-    "Container orchestration fundamentals",
-]
+```txt
+systems programming       C++ internals, memory, performance, low-level design
+backend architecture      Spring MVC, service design, auth, databases, APIs
+local-first AI            Ollama, RAG, private knowledge systems, efficient inference
+distributed systems       consensus, event streams, message queues, reliability
+embedded + IoT            sensors, ESP32, MQTT-style pipelines, live dashboards
+optimization              classical solvers, QAOA, financial models, backtesting
 ```
 
 ---
 
-### `projects/`
+## systems i've built
 
 <table>
 <tr>
 <td width="50%" valign="top">
 
-**[AlphaWindow](https://github.com/PriyanshS/AlphaWindow)**  
-`TypeScript` `Ollama` `Qwen 2.5` `PostgreSQL` `RAG`
+### [AlphaWindow](https://github.com/PriyanshS/AlphaWindow)
 
-Local-first financial intelligence platform.  
-Chrome extension → Express backend → local Ollama  
-inference → PostgreSQL archival. Zero telemetry.  
-Multi-source RAG over private PDF/Markdown docs.  
-JWT-protected. GPU-accelerated. Clone & deploy.
+Local-first intelligence platform for capturing research fragments, enriching them with local AI, storing them in PostgreSQL, and querying them through a private RAG workflow.
+
+`TypeScript` `Express` `PostgreSQL` `Ollama` `Qwen 2.5` `RAG` `JWT`
 
 </td>
 <td width="50%" valign="top">
 
-**[Quantum Portfolio Optimizer](https://github.com/PriyanshS/Quantum-Classical-Portfolio-Optimization)**  
-`Python` `Qiskit` `CPLEX` `QAOA` `yfinance`
+### [Library Monitoring System](https://github.com/PriyanshS/LIbrary-Monitoring-System)
 
-Dual-mode NSE portfolio engine. Classical path  
-solves 10-asset Markowitz QP via IBM CPLEX.  
-Quantum path applies QAOA to 3-asset subproblem  
-on local hardware. Live data ingestion, full  
-backtesting, rich TUI — no dashboard dependency.
+ESP32-based environment and occupancy monitor for library spaces, with real sensors, actuator control, Blynk cloud logging, a browser dashboard, wiring docs, and a LaTeX report.
+
+`ESP32` `Arduino` `Blynk` `Sensors` `Node.js` `HTML` `LaTeX`
 
 </td>
 </tr>
 <tr>
 <td width="50%" valign="top">
 
-**[ParyayOS / CampusZero](https://github.com/PriyanshS/paryayos-campuszero)**  
-`TypeScript` `Three.js` `TimescaleDB` `Node.js`
+### [NityaOS](https://github.com/PriyanshS/NityaOS)
 
-Gamified 3D digital twin for campus sustainability.  
-Dual IoT ingestion (static CSV + simulated sensors).  
-Linear regression forecasting with seasonal adjustment.  
-Three.js + OpenStreetMap twin. XP loop, 10 levels,  
-CBA calculator with Indian market pricing.  
-*Technex 2026 submission.*
+Hospital operating system prototype with patient, doctor, nurse, billing, department, medical-record, audit-log, role-based access, and dashboard workflows.
+
+`FastAPI` `MySQL` `React` `Redux Toolkit` `SQLAlchemy` `JWT` `Docker`
 
 </td>
 <td width="50%" valign="top">
 
-**[NityaOS](https://github.com/PriyanshS)**  
-`FastAPI` `MySQL` `React` `JWT` `Pydantic`
+### [CampusZero / ParyayOS](https://github.com/PriyanshS/paryayos-campuszero)
 
-Full-stack Hospital Management System.  
-MySQL schema in 3NF across 12 entities.  
-Chen ER + Mermaid ERD. FastAPI async backend  
-with Pydantic validation and JWT auth middleware.  
-React frontend. Auto-install bootstrap scripts.
+Gamified digital twin for campus sustainability: CSV ingestion, simulated IoT streams, Three.js visualization, predictions, alerts, roadmap tracking, and cost-benefit analysis.
+
+`JavaScript` `Three.js` `OpenStreetMap` `IoT Simulation` `Forecasting`
+
+</td>
+</tr>
+<tr>
+<td colspan="2" valign="top">
+
+### [Quantum-Classical Portfolio Optimization](https://github.com/PriyanshS/Quantum-Classical-Portfolio-Optimization)
+
+Indian market portfolio optimizer using live historical data, CPLEX for classical optimization, QAOA for quantum experimentation, terminal charts, and backtesting.
+
+`Python` `Qiskit` `CPLEX` `yfinance` `Rich` `Plotext` `Matplotlib`
 
 </td>
 </tr>
@@ -113,40 +99,40 @@ React frontend. Auto-install bootstrap scripts.
 
 ---
 
-### `stack.json`
+## toolbox
 
-```json
-{
-  "languages":  ["TypeScript", "Python", "JavaScript", "SQL", "C++", "Java", "Bash"],
-  "backend":    ["Express", "FastAPI", "Node.js", "REST", "JWT", "Pydantic"],
-  "databases":  ["PostgreSQL", "MySQL", "TimescaleDB", "InfluxDB", "MongoDB"],
-  "specialised":["Ollama", "Qiskit", "Three.js", "RAG", "MQTT", "Vite", "LaTeX"]
-}
+```txt
+languages      Python, TypeScript, JavaScript, SQL, C++, Java, Bash
+backend        FastAPI, Express, Node.js, REST APIs, JWT, SQLAlchemy
+frontend       React, Redux Toolkit, HTML, CSS, Three.js, Vite
+data           PostgreSQL, MySQL, MariaDB, TimescaleDB, InfluxDB, MongoDB
+ai             Ollama, Qwen, RAG, local inference workflows
+hardware       ESP32, Arduino, sensors, Blynk, embedded dashboards
+research       Qiskit, CPLEX, LaTeX, Mermaid, technical reports
 ```
 
 ---
 
-### `research/`
+## problem solving
 
-**Sovereign Crowd Monitoring Stack — Simhastha Kumbh Mela 2028**  
-100-source literature review across nine sensing modalities.  
-Five-phase architecture: RFID identity binding · sovereign local GIS · multi-modal sensor lattice · distributed edge-fog processing · stampede advance warning.  
-Delivered as LaTeX review paper + automated presentation pipeline.
+[DSA](https://github.com/PriyanshS/DSA) is where I practice the sharper side of programming: data structures, algorithms, implementation discipline, and thinking clearly under constraints.
+
+I enjoy problems where the solution is not just code, but a model of the thing itself.
 
 ---
 
+## github signal
+
 <div align="center">
 
-<sub>
-B.Tech Computer Engineering · NMIMS STME · 2023–2027
-&nbsp;·&nbsp;
-<a href="https://linkedin.com/in/priyanshsaxena">LinkedIn</a>
-&nbsp;·&nbsp;
-<a href="mailto:priyansh@mail.com">priyansh@mail.com</a>
-</sub>
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=PriyanshS&show_icons=true&hide_border=true&count_private=true&theme=default)
 
-<br><br>
-
-![visitors](https://visitor-badge.laobi.icu/badge?page_id=PriyanshS.PriyanshS&style=flat&color=888780)
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=PriyanshS&layout=compact&hide_border=true&theme=default)
 
 </div>
+
+---
+
+## north star
+
+Build creative systems. Learn the fundamentals deeply. Make the prototype real enough that it teaches something.
