@@ -6,7 +6,7 @@
 
 I like taking messy ideas and turning them into working things: dashboards, digital twins, local AI tools, sensor systems, optimization engines, and full-stack prototypes that actually run.
 
-[GitHub](https://github.com/PriyanshS) | [LinkedIn](https://linkedin.com/in/priyanshsaxena) | [Email](mailto:priyansh@mail.com)
+
 
 </div>
 
@@ -16,8 +16,6 @@ I like taking messy ideas and turning them into working things: dashboards, digi
 
 ```txt
 name        Priyansh Saxena
-base        Indore, India
-school      B.Tech Computer Engineering @ NMIMS STME
 mode        curious generalist, systems builder, constant learner
 pattern     idea -> architecture -> prototype -> polish -> document
 ```
@@ -121,18 +119,9 @@ I enjoy problems where the solution is not just code, but a model of the thing i
 
 ---
 
-## github signal
-
-<div align="center">
-
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=PriyanshS&show_icons=true&hide_border=true&count_private=true&theme=default)
-
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=PriyanshS&layout=compact&hide_border=true&theme=default)
-
-</div>
 
 ---
 
 ## north star
 
-Build creative systems. Learn the fundamentals deeply. Make the prototype real enough that it teaches something.
+Build creative systems. Learn the fundamentals deeply. 

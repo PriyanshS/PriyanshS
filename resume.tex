@@ -1,0 +1,238 @@
+\documentclass[10pt, a4paper]{article}
+
+% ── Packages ────────────────────────────────────────────────
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[top=1.4cm, bottom=1.4cm, left=1.8cm, right=1.8cm]{geometry}
+\usepackage{xcolor}
+\usepackage[hidelinks]{hyperref}
+\usepackage{enumitem}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage[activate=false]{microtype}
+
+% ── Colours ─────────────────────────────────────────────────
+\definecolor{dark}{HTML}{0a0a0a}
+\definecolor{mid}{HTML}{0a0a0a}
+\definecolor{muted}{HTML}{0a0a0a}
+\definecolor{ruled}{HTML}{0a0a0a}
+
+% ── Base settings ───────────────────────────────────────────
+\color{dark}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+
+% ── List style ──────────────────────────────────────────────
+\setlist[itemize]{
+  label={\color{muted}\textendash},
+  leftmargin=1.2em,
+  topsep=2pt,
+  itemsep=1.5pt,
+  parsep=0pt
+}
+
+% ── Section heading ─────────────────────────────────────────
+\newcommand{\rsection}[1]{%
+  \vspace{7pt}%
+  {\small\scshape\color{muted}#1}%
+  \vspace{2pt}\par\noindent%
+  {\color{ruled}\rule{\linewidth}{0.4pt}}\par%
+  \vspace{2pt}%
+}
+
+% ── Project block ───────────────────────────────────────────
+% \rproject{Name}{github-slug-or-empty}{Stack line}{bullet list}
+\newcommand{\rproject}[4]{%
+  \noindent\textbf{#1}\par%
+  \ifx&#2&\else
+    \vspace{-1pt}%
+    {\footnotesize\texttt{github.com/PriyanshS/#2}}\par%
+  \fi
+  \vspace{-1pt}%
+  {\small\texttt{#3}}\par%
+  \vspace{1pt}%
+  #4%
+  \vspace{3pt}%
+  \noindent{\color{ruled}\rule{\linewidth}{0.3pt}}\par%
+  \vspace{4pt}%
+}
+
+% ─────────────────────────────────────────────────────────────
+\begin{document}
+% ─────────────────────────────────────────────────────────────
+
+%% ══ HEADER ══════════════════════════════════════════════════
+{\LARGE\bfseries Priyansh Saxena}
+\hfill
+{\small\color{muted}Indore, Madhya Pradesh, IN}
+
+\vspace{4pt}
+{\color{mid}
+  Computer Engineer
+  \enspace\textperiodcentered\enspace
+  B.Tech, NMIMS STME
+  \enspace\textperiodcentered\enspace
+  Systems Builder
+}
+
+\vspace{4pt}
+{\small\color{muted}
+  \href{mailto:priyanshsaxena50@gmail.com}{Gmail}
+  \quad\textbar\quad
+  \href{https://github.com/PriyanshS}{GitHub}
+  \quad\textbar\quad
+  \href{https://www.linkedin.com/in/priyansh-saxena-027a40317}{LinkedIn}
+}
+
+\vspace{5pt}
+{\color{ruled}\rule{\linewidth}{0.5pt}}
+\vspace{4pt}
+
+%% Pitch / Summary
+{\small\color{mid}
+Curious computer engineering student building across software, data, AI, hardware,
+and interfaces. Projects span local-first intelligence tools, embedded monitoring,
+hospital operations software, sustainability digital twins, and quantum-classical
+optimisation. Strongest in turning broad ideas into working systems with clear
+architecture, reproducible setup, documented tradeoffs, and practical user flows.
+}
+
+%% ══ EDUCATION ═══════════════════════════════════════════════
+\rsection{Education}
+
+\noindent
+\begin{tabularx}{\linewidth}{@{}X r@{}}
+  \textbf{SVKM's NMIMS --- School of Technology, Management \& Engineering, Indore}
+  & {\small\color{muted}2024 -- 2028} \\
+\end{tabularx}
+{\small\color{mid}B.Tech, Computer Engineering\quad\textperiodcentered\quad Sem IV\quad\textperiodcentered\quad Current CGPA: 9.08/10}\\
+{\footnotesize\color{muted}
+  Relevant coursework: Data Structures \& Algorithms, DBMS, OOP via Java,
+  Microprocessors \& Computer Organisation, Theoretical Computer Science, Digital Logic Design
+}
+
+{\footnotesize\color{muted}
+  Academic achievement: Qualified NTSE Stage 1 during high school, 2021
+}
+
+%% ══ PROJECTS ════════════════════════════════════════════════
+\rsection{Projects}
+
+\rproject{AlphaWindow --- Local-first Financial Intelligence Platform}
+  {AlphaWindow}
+  {TypeScript | Node.js | Express | PostgreSQL | Ollama | Qwen 2.5 | JWT | RAG | Chrome Extension}
+  {\begin{itemize}
+    \item Designed a local-first research stack connecting browser capture,
+      authenticated Express / TypeScript APIs, local Ollama + Qwen~2.5 inference,
+      and PostgreSQL archival with no external LLM dependency.
+    \item Built AI enrichment for captured research fragments: category labelling,
+      sentiment classification, confidence scoring, and metadata-backed sorting
+      for finance, defence, technology, energy, and macro signals.
+    \item Implemented a private knowledge workflow with PDF / Markdown ingestion,
+      multi-source RAG, JWT-protected sessions, schema exploration, raw SQL access,
+      setup automation, and ``Doctor Mode'' diagnostics for portability.
+  \end{itemize}}
+
+\rproject{ParyayOS / CampusZero --- Campus Sustainability Digital Twin}
+  {paryayos-campuszero}
+  {TypeScript | Node.js | Three.js | Python | TimescaleDB | InfluxDB | OpenStreetMap | MQTT}
+  {\begin{itemize}
+    \item Built a campus sustainability prototype with static CSV ingestion and
+      simulated IoT telemetry for power, water, and waste monitoring.
+    \item Implemented Three.js + OpenStreetMap digital twin, threshold alerts,
+      XP-based progress loop, roadmap tracking, and client-side forecasting
+      with seasonal adjustment.
+    \item Created a 14-item cost-benefit calculator using Indian hardware pricing,
+      payback estimates, and carbon-credit modelling; production roadmap targets
+      MQTT + time-series storage. \textit{Technex 2026 submission.}
+  \end{itemize}}
+
+\rproject{NityaOS --- Hospital Management System}
+  {NityaOS}
+  {FastAPI | MySQL | React | Pydantic | JWT | Chen ER}
+  {\begin{itemize}
+    \item Modelled hospital operations across patients, doctors, nurses,
+      departments, medical records, billing, users, and audit logs using
+      a normalised MySQL schema with views and triggers.
+    \item Built FastAPI backend with structured routers, Pydantic validation,
+      SQLAlchemy models, JWT authentication, and documented API endpoints.
+    \item Developed React workflows for admin, doctor, and patient roles,
+      including dashboard analytics, global search, patient timeline, and
+      local Docker / script-based startup.
+  \end{itemize}}
+
+\rproject{IoT Library Monitoring System}
+  {LIbrary-Monitoring-System}
+  {C++ | ESP32 | Arduino | Blynk IoT | Node.js | HTML/CSS | DHT22 | HC-SR04 | MQ-2 | LaTeX}
+  {\begin{itemize}
+    \item Engineered an ESP32 monitoring system for temperature, humidity,
+      noise, air quality, motion, and bidirectional occupancy using DHT22,
+      MQ-2, PIR, microphone, and dual HC-SR04 ultrasonic sensors.
+    \item Streamed telemetry to Blynk IoT across virtual datastreams and
+      implemented actuator logic for LEDs and buzzer alerts based on occupancy
+      and air-quality thresholds.
+    \item Built a Node.js bridge and browser dashboard for real-time monitoring;
+      documented wiring, setup, grading criteria, and system design in a
+      \LaTeX{} report with TikZ diagrams.
+  \end{itemize}}
+
+
+\rproject{Quantum-Classical Portfolio Optimizer}
+  {Quantum-Classical-Portfolio-Optimization}
+  {Python | Qiskit | IBM CPLEX | QAOA | yfinance | pandas | rich | plotext}
+  {\begin{itemize}
+    \item Built a dual-mode NSE portfolio engine with a classical CPLEX path
+      for 10-asset Markowitz optimisation and an experimental QAOA path for
+      a reduced quantum subproblem.
+    \item Added capital-stratified stock selection, 1-year \texttt{yfinance}
+      ingestion, allocation output, ROI summaries, and backtesting against
+      individual asset trajectories.
+    \item Designed a terminal-first interface using \texttt{rich} and
+      \texttt{plotext}, with high-resolution backtest charts exported to PNG.
+  \end{itemize}}
+
+%% ══ EXPERIENCE ══════════════════════════════════════════════
+\rsection{Experience}
+
+\noindent
+\begin{tabularx}{\linewidth}{@{}X r@{}}
+  \textbf{Community Service Internship} --- Teaching \& Tutoring
+  & {\small\color{muted}21 days, 2024} \\
+\end{tabularx}
+{\footnotesize\color{muted}
+  Voluntarily taught children aged 3--16 across subjects including
+  Mathematics, English, Social Studies, and Music.
+  Adapted instruction style to wide age and ability ranges;
+  managed multi-level classrooms with no formal pedagogical training.
+  Reinforced that communication is a technical skill.
+}
+
+%% ══ TECHNICAL SKILLS ════════════════════════════════════════
+\rsection{Technical Skills}
+
+\noindent
+\begin{tabular}{@{}p{3.2cm} p{\dimexpr\linewidth-3.2cm}@{}}
+  \textbf{Languages}       & TypeScript, Python, JavaScript, SQL, C++, Java, Bash \\[4pt]
+  \textbf{Backend / APIs}  & Express, FastAPI, Node.js, REST, JWT, SQLAlchemy, Pydantic  \\[4pt]
+  \textbf{Databases}       & PostgreSQL, MySQL, TimescaleDB, InfluxDB, MongoDB     \\[4pt]
+  \textbf{AI / Data}       & Ollama, Qwen, RAG, Qiskit, CPLEX, yfinance, pandas   \\[4pt]
+  \textbf{Systems / Tools} & Three.js, Git, Linux, Docker, \LaTeX{}, Vite, Mermaid \\[4pt]
+  \textbf{Embedded / IoT}  & ESP32, Arduino, Blynk, C++, MQTT concepts, HC-SR04, DHT22 \\[4pt]
+  \textbf{Learning Focus}  & Modern C++, systems programming, Spring MVC, backend architecture
+\end{tabular}
+
+%% ══ BEYOND CODE ═════════════════════════════════════════════
+\rsection{Beyond Engineering}
+
+{\small\color{mid}
+I read extensively in history, political philosophy, and international relations ---
+particularly the deep history of the Indian subcontinent, the mechanics of state formation,
+and how civilisations handle the transition from oral to written knowledge systems.
+Philosophy of mind and epistemology interest me for the same reason
+distributed systems do: both are fundamentally about what it means to \textit{know} something,
+and how that knowledge degrades across transmission.
+Off the screen, I play basketball --- the one domain where latency is truly unforgiving.
+}
+
+\end{document}
